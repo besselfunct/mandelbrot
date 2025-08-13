@@ -105,6 +105,7 @@ fn main() -> io::Result<()> {
 
         }
     }
+    terminal::disable_raw_mode()?;
     execute!(
         std::io::stdout(),
     )?;
